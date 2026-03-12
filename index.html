@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aakash Portfolio</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f2ea;
+      --card: #fffdf9;
+      --text: #1f1a17;
+      --accent: #b35c2e;
+      --shadow: rgba(31, 26, 23, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      font-family: "Georgia", serif;
+      background:
+        radial-gradient(circle at top, rgba(179, 92, 46, 0.16), transparent 35%),
+        linear-gradient(160deg, var(--bg), #efe7dc);
+      color: var(--text);
+    }
+
+    main {
+      width: min(100%, 720px);
+      padding: 48px 36px;
+      border: 1px solid rgba(179, 92, 46, 0.18);
+      border-radius: 28px;
+      background: var(--card);
+      box-shadow: 0 24px 60px var(--shadow);
+      text-align: center;
+    }
+
+    p {
+      margin: 0;
+      font-size: clamp(1.1rem, 2vw, 1.35rem);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 18px 0 0;
+      font-size: clamp(2.6rem, 8vw, 5rem);
+      line-height: 0.95;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <p>Portfolio</p>
+    <h1>Hi, my name is Aakash.</h1>
+  </main>
+</body>
+</html>
