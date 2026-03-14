@@ -3,63 +3,198 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aakash Portfolio</title>
+  <meta name="description" content="Aakash portfolio in a subtle markdown-style frontend.">
+  <title>Aakash.md</title>
   <style>
     :root {
       color-scheme: light;
-      --bg: #f7f2ea;
-      --card: #fffdf9;
-      --text: #1f1a17;
-      --accent: #b35c2e;
-      --shadow: rgba(31, 26, 23, 0.12);
-    }
-
-    * {
-      box-sizing: border-box;
     }
 
     body {
       margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: 24px;
-      font-family: "Georgia", serif;
-      background:
-        radial-gradient(circle at top, rgba(179, 92, 46, 0.16), transparent 35%),
-        linear-gradient(160deg, var(--bg), #efe7dc);
-      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      line-height: 1.65;
+      color: #24292f;
+      background: #ffffff;
     }
 
     main {
-      width: min(100%, 720px);
-      padding: 48px 36px;
-      border: 1px solid rgba(179, 92, 46, 0.18);
-      border-radius: 28px;
-      background: var(--card);
-      box-shadow: 0 24px 60px var(--shadow);
-      text-align: center;
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 3rem;
     }
 
-    p {
-      margin: 0;
-      font-size: clamp(1.1rem, 2vw, 1.35rem);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--accent);
+    h1,
+    h2,
+    h3 {
+      line-height: 1.3;
+      margin-top: 1.8rem;
+      margin-bottom: 0.7rem;
     }
 
     h1 {
-      margin: 18px 0 0;
-      font-size: clamp(2.6rem, 8vw, 5rem);
-      line-height: 0.95;
+      margin-top: 0;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid #d0d7de;
+    }
+
+    h2 {
+      padding-bottom: 0.3rem;
+      border-bottom: 1px solid #d8dee4;
+    }
+
+    code {
+      background: #f6f8fa;
+      padding: 0.15rem 0.35rem;
+      border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: 0.92em;
+    }
+
+    pre {
+      background: #f6f8fa;
+      border: 1px solid #d8dee4;
+      border-radius: 8px;
+      padding: 0.9rem;
+      overflow-x: auto;
+    }
+
+    blockquote {
+      margin: 1rem 0;
+      padding: 0.2rem 0 0.2rem 1rem;
+      border-left: 4px solid #d0d7de;
+      color: #57606a;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 0.9rem 0;
+    }
+
+    th,
+    td {
+      border: 1px solid #d0d7de;
+      padding: 0.45rem 0.6rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    hr {
+      border: 0;
+      border-top: 1px solid #d8dee4;
+      margin: 1.5rem 0;
     }
   </style>
 </head>
 <body>
   <main>
-    <p>Portfolio</p>
-    <h1>Hi, my name is Aakash.</h1>
+    <article aria-label="Portfolio markdown page">
+      <h1>Aakash.space</h1>
+      <p><strong>I do some coding and multiple things.</strong></p>
+      <p><em>Junior Developer | Backend | Embedded C </em></p>
+
+      <p>
+        <a href="#about">About</a> ·
+        <a href="#roles">Roles</a> ·
+        <a href="#stack">Stack</a> ·
+        <a href="#projects">Projects</a> ·
+        <a href="#experience">Experience</a> ·
+        <a href="#contact">Contact</a>
+      </p>
+
+      <hr>
+
+      <h2 id="about">## About</h2>
+      <p>Not a good developer but can do stuffs, curious on multiple things, so I do jump across domains.</p>
+      <p>Right now I work as a Junior Developer with 1.5+ years of experience across Android, backend APIs, and embedded firmware in C.</p>
+      <blockquote>
+        <p>Bro this life sucks. But I still build, learn, and ship.</p>
+      </blockquote>
+
+      <h2 id="stack">## Tech Stack</h2>
+      <p><strong>Top skills:</strong> Right now? Just Vibe, Do Vibe-driven development</p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Domain</th>
+            <th scope="col">Tools / Languages</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Backend</th>
+            <td><code>JavaScript</code>, <code>Express</code></td>
+          </tr>
+          <tr>
+            <th scope="row">Embedded</th>
+            <td><code>C</code>, ESP-IDF</td>
+          </tr>
+          <tr>
+            <th scope="row">Mobile</th>
+            <td><code>Kotlin</code>, Jetpack Compose</td>
+          </tr>
+          <tr>
+            <th scope="row">Build Style</th>
+            <td>Vibe coding, experimentation, fast iteration</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 id="projects">## Some Useless Projects</h2>
+
+      <h3>### 1) Claude Swarm</h3>
+      <p>Multi-agent orchestration plugin for Claude Code with tmux-based live visibility and role-driven execution.</p>
+      <ul>
+        <li>Built team orchestration commands, templates, logs, and run-history flows.</li>
+        <li>Focused on developer workflow speed and AI-assisted parallelization.</li>
+      </ul>
+      <p><a href="https://github.com/Akash-pugazh/claude-swarm">github.com/Akash-pugazh/claude-swarm</a></p>
+
+      <h3>### 2) VoiceScroll Android</h3>
+      <p>Voice-gesture driven mobile concept to trigger scrolling behavior in short-form content flows.</p>
+      <ul>
+        <li>Built around speech recognition patterns and practical mobile constraints.</li>
+        <li>Balanced cross-platform ambitions with realistic Android-first execution.</li>
+      </ul>
+      <p><a href="https://github.com/Akash-pugazh/vo-scroll-android">github.com/Akash-pugazh/vo-scroll-android</a></p>
+
+      <h2 id="experience">## Experience Snapshot</h2>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Area</th>
+            <th scope="col">What I Worked On</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Android Development</th>
+            <td>App development with Kotlin and Jetpack Compose.</td>
+          </tr>
+          <tr>
+            <th scope="row">Backend APIs</th>
+            <td>JavaScript API development and service workflows.</td>
+          </tr>
+          <tr>
+            <th scope="row">Embedded Firmware</th>
+            <td>C-based firmware development and hardware-facing logic.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2>## Outside Code</h2>
+      <p>I do workout and edit videos in DaVinci Resolve / Premiere Pro.</p>
+      <pre><code>current_mode = "build + learn + repeat"</code></pre>
+
+      <h2 id="contact">## Contact</h2>
+      <ul>
+        <li>Email: <a href="mailto:aakashit13@gmail.com">aakashit13@gmail.com</a></li>
+        <li>GitHub: <a href="https://github.com/Akash-pugazh">github.com/Akash-pugazh</a></li>
+        <li>Location: Chennai</li>
+      </ul>
+      <p><strong>If you are building something interesting, let&rsquo;s build together.</strong></p>
+    </article>
   </main>
 </body>
 </html>
